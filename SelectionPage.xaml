@@ -1,0 +1,22 @@
+﻿<Page x:Class="Pireflix.SelectionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pireflix"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="SelectionPage" Background="Black">
+	<Grid x:Name="selectionPageGrid" Margin="0,0,10,-6">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="46*"/>
+			<RowDefinition Height="489*"/>
+		</Grid.RowDefinitions>
+		<Image HorizontalAlignment="Center" Height="65" VerticalAlignment="Center" Width="157" Source="\images\pireflix.png"/>
+		<Image HorizontalAlignment="Left" Source="\images\backbutton.png" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonDown="Image_MouseLeftButtonDown" Height="48" Margin="48,24,0,0" VerticalAlignment="Top" Width="74"/>
+		<Canvas x:Name="seasonCanvas" Margin="0,10,1666,82" Grid.Row="1"/>
+		<ScrollViewer PreviewMouseWheel="ScrollViewer_PreviewMouseWheel" Margin="330,108,-60,10" Grid.Row="1">
+			<Canvas x:Name="seasonDisplayCanvas" Grid.Row="1" Height="9343" Width="1323"/>
+		</ScrollViewer>
+	</Grid>
+</Page>

@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="Pireflix.PlaybackHeaderControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pireflix"
+             mc:Ignorable="d" 
+             d:DesignWidth="1920" Background="Black" Height="100" MouseLeave="OnHeaderMouseLeave" MouseEnter="OnHeaderMouseEnter" Margin="0, 0, 0, 0">
+	<Grid>
+		<Canvas Width="1920" Background="Black"/>
+		<Image HorizontalAlignment="Left" Source="\images\backbutton.png" MouseEnter="OnMouseEnter" MouseLeave="OnMouseLeave" MouseLeftButtonDown="OnMouseLeftButtonDown" Height="48" Margin="49,22,0,0" VerticalAlignment="Top" Width="74"/>
+		<TextBlock x:Name="title" Margin="488,24,488,55" TextWrapping="Wrap" FontSize="18" FontFamily="Arial" TextAlignment="Center" Background="Black" Foreground="White"/>
+		<TextBlock x:Name="description" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" TextAlignment="Center" Background="Black" Foreground="White" Margin="330,50,330,11"/>
+	</Grid>
+</UserControl>
